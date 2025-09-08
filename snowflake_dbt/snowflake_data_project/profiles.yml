@@ -1,0 +1,13 @@
+snowflake_data_project:   
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: qt27777.us-central1.gcp
+      user: MARIAMABOELFADL         # يوزر Snowflake
+      password: Asdfghjkl@12354   # الباسورد
+      role:     ACCOUNTADMIN       # مثال: SYSADMIN
+      database: finance_db    # مثال: ANALYTICS
+      warehouse: finance_dwh  # مثال: COMPUTE_WH
+      schema: raw                  # الـschema اللي dbt هيبني فيه
+      threads: 4
